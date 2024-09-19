@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+body {
+  font-family: 'Bellefai', 'Barlow Condensed', 'Barlow', sans-serif;
+}
+
+.dark-blue {
+  color: #0B0D17;
+}
+.blue {
+  color: #D0D6F9;
+}
+.white {
+  color: #FFFFFF;
+}
+.text-preset1 {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 144px;
+  line-height:  171.9%;
+  letter-spacing: 0px;
+}
+.text-preset2 {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 100px;
+  line-height: 114.6%;
+  letter-spacing: 0px;
+}
+.text-preset3 {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 56px;
+  line-height: 64.2%;
+  letter-spacing: 0px;
+}
+.text-preset4 {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 32px;
+  line-height: 36.7%;
+  letter-spacing: 0px;
+}
+.text-preset5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  line-height: 33.6%;
+  letter-spacing: 4px;
+}
+.text-preset6 {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 28px;
+  line-height: 32.1%;
+  letter-spacing: 0px;
+}
+.text-preset7 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  line-height: 16.8%;
+  letter-spacing: 2px;
+}
+.text-preset8 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 19.2%;
+  letter-spacing: 2px;
+}
+.text-preset9 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

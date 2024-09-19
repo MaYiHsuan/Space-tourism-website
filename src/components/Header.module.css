@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    margin: 64px 64px 24px 64px;
+}
+hr {
+    max-width: 560px;
+    opacity: 0.25;
+}
+.box {
+    width: 736px;
+    height: 96px;
+    
+}

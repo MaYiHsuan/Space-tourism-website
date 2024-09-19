@@ -1,0 +1,8 @@
+body {
+    background-image: url("/src/assets/home/background-home-desktop.jpg");
+}
+.text-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
