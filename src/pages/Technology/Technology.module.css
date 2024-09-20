@@ -1,0 +1,34 @@
+.background {
+    position: fixed; /* 固定定位 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 寬度 100% */
+    height: 100%; /* 高度 100% */
+    background-image: url('../../assets/technology/background-technology-desktop.jpg'); /* 背景圖片 */
+    background-size: cover; /* 使背景圖片覆蓋整個容器 */
+    background-position: center; /* 背景圖片居中 */
+    z-index: -1; /* 確保背景在其他內容之下 */
+}
+.container {
+    position: relative; /* 讓內容可以滾動 */
+    z-index: 1; /* 確保內容在背景之上 */
+    padding: 20px; /* 添加一些內邊距 */
+}
+.circle {
+    width: 80px; /* 固定寬度 */
+    height: 80px; /* 固定高度 */
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    text-align: center;
+    display: flex; /* 使用 flexbox 來居中內容 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    color: #ffffff;
+}
+.circle:hover {
+    background-color: #ffffff;
+    color: #0B0D17;
+}
+.img {
+    max-width: 608px;
+}

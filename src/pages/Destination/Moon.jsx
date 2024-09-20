@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import data from '../../Data/data.json'; // 引入 JSON 數據
-import imagePng from '../../assets/destination/image-titan.png';
+import imagePng from '../../assets/destination/image-moon.png';
 import styles from './Destination.module.css';
 
-function Titan() {
-  const member = data.destinations[3]; // 獲取數據
+function Moon() {
+  const member = data.destinations[0]; // 獲取數據
 
   return (
     <>
@@ -39,4 +39,4 @@ function Titan() {
   );
 }
 
-export default Titan;
+export default Moon;

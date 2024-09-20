@@ -10,5 +10,10 @@ hr {
 .box {
     width: 736px;
     height: 96px;
-    
+    background-color: #ffffff;
+    backdrop-filter: blur(80px);
+}
+.tab {
+    display: flex;
+    align-items: center;
 }

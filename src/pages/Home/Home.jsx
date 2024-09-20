@@ -5,8 +5,8 @@ import styles from './Home.module.css';
 function Home() {
 
   return (
-    <div>
-      <div className={styles.text-box}>
+    <div className={styles.container}>
+      <div>
         <p className="text-preset5">SO, YOU WANT TO TRAVEL TO</p>
         <span className="text-preset1">Space</span>
         <p className="text-preset9">
@@ -15,12 +15,13 @@ function Home() {
         because we’ll give you a truly out of this world experience!
         </p>
       </div>
-      
-      <Link to="/Destination">
-        <span className="text-preset4">Explore</span>
-      </Link>
+      <div>
+        <Link to="/Destination">
+         <span className="text-preset4">Explore</span>
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Home ;

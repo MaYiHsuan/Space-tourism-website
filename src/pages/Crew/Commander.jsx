@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import data from '../../Data/data.json';
-import imagePng from '../../assets/crew/image-victor-glover.png';
+import data from '../../Data/data.json'; // 引入 JSON 數據
 import styles from './Crew.module.css';
+import imagePng from '../../assets/crew/image-douglas-hurley.png';
 
-function Pilot() {
-  const member = data.crew[2]; // 獲取飛行員的數據
+function Commander() {
+  const member = data.crew[0]; // 獲取指揮官的數據
 
   return (
     <>
@@ -31,4 +31,4 @@ function Pilot() {
   );
 }
 
-export default Pilot;
+export default Commander;

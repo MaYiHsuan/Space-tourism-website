@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import data from '../../Data/data.json'; // 引入 JSON 數據
-import imagePng from '../../assets/technology/image-space-capsule-portrait.jpg';
+import imagePng from '../../assets/technology/image-launch-vehicle-portrait.jpg';
 import styles from './Technology.module.css';
 
-function Capsule() {
-  const member = data.technology[2]; // 獲取數據
+function Vehicle() {
+  const member = data.technology[0]; // 獲取數據
 
   return (
     <>
@@ -34,4 +34,4 @@ function Capsule() {
   );
 }
 
-export default Capsule;
+export default Vehicle;
