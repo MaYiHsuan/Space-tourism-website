@@ -1,4 +1,4 @@
-.container {
+.background {
     position: fixed; /* 固定定位 */
     top: 0;
     left: 0;
@@ -8,4 +8,34 @@
     background-size: cover; /* 使背景圖片覆蓋整個容器 */
     background-position: center; /* 背景圖片居中 */
     z-index: -1; /* 確保背景在其他內容之下 */
+}
+.container {
+    padding-top: 136px;
+}
+.box {
+    margin: 128px 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.textBox {
+   text-align: start;
+   width: 540px;
+   max-height: 343px;
+}
+.text4 {
+   width: 272px;
+   height: 272px;
+   border-radius: 50%;
+   background-color: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 0 0 88px rgba(255, 255, 255, 0);
+}
+.text4:hover {
+    box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease;
+    color: rgba(11, 13, 23, 0.5);
 }

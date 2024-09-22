@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
-body {
-  font-family: 'Bellefai', 'Barlow Condensed', 'Barlow', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background-color: #0B0D17; /* 使用您的設計中的背景顏色 */
+  min-height: 100vh;
+  z-index: -20;
+  font-family: 'Bellefai', 'Barlow Condensed', 'Barlow', sans-serif;
+}
+a {
+  text-decoration: none; /* 移除底線 */
+}
 .dark-blue {
   color: #0B0D17;
 }
@@ -17,52 +28,79 @@ body {
   font-size: 144px;
   line-height:  171.9%;
   letter-spacing: 0px;
+  font-weight: 400;
 }
 .text-preset2 {
   font-family: 'Bellefair', sans-serif;
   font-size: 100px;
-  line-height: 114.6%;
   letter-spacing: 0px;
+  font-weight: 400;
 }
 .text-preset3 {
   font-family: 'Bellefair', sans-serif;
   font-size: 56px;
-  line-height: 64.2%;
   letter-spacing: 0px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 .text-preset4 {
   font-family: 'Bellefair', sans-serif;
   font-size: 32px;
-  line-height: 36.7%;
   letter-spacing: 0px;
+  font-weight: 400;
 }
 .text-preset5 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 28px;
-  line-height: 33.6%;
   letter-spacing: 4px;
+  font-weight: 400;
 }
 .text-preset6 {
   font-family: 'Bellefair', sans-serif;
   font-size: 28px;
-  line-height: 32.1%;
   letter-spacing: 0px;
+  font-weight: 400;
 }
 .text-preset7 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px;
-  line-height: 16.8%;
   letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 12px;
 }
 .text-preset8 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 16px;
-  line-height: 19.2%;
   letter-spacing: 2px;
+  font-weight: 400;
 }
 .text-preset9 {
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
   line-height: 180%;
   letter-spacing: 0px;
+  font-weight: 400;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+.number {
+  font-weight: 700;
 }

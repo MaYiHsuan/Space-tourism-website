@@ -1,19 +1,77 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 40px;
+    position: relative;
+}
+
+.logoline {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
 .logo {
     display: flex;
     justify-content: flex-start;
-    margin: 64px 64px 24px 64px;
+    margin: 24px 64px;
 }
-hr {
-    max-width: 560px;
-    opacity: 0.25;
+
+.line {
+    width: 560px;
+    height: 1px;
+    background-color: rgba(151, 151, 151, 1);
+    position: absolute;
+    left: 176px;
+    z-index: 11;
 }
+
 .box {
     width: 736px;
     height: 96px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(80px);
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 528px;
+    padding-left: 155px;
+    z-index: 1;
 }
+
 .tab {
     display: flex;
     align-items: center;
+    color: #ffffff !important;
+    height: 96px;
+    position: relative;
+    margin-right: 48px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tab:hover::after {
+    background-color: rgba(255, 255, 255, 0.5); /* 懸浮效果 */
+}
+
+.active {
+    color: #ffffff; /* 當前頁面的文字變為白色 */
+}
+
+.tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.active::after {
+    background-color: #ffffff; /* 活躍狀態的底線顏色 */
+}
+
+li {
+    list-style: none;
 }
