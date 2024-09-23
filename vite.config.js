@@ -1,9 +1,10 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Space-tourism-website/',
+  plugins: [react()], // 使用 react 插件來處理 JSX 和 React 的功能
+  base: '/Space-tourism-website/', // 用於 GitHub Pages 部署的 base 路徑
   resolve: {
     alias: {
       react: resolve(__dirname, 'node_modules/react'),
