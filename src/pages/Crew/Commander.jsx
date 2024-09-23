@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import data from '../../Data/data.json'; // 引入 JSON 數據
+import data from '/Space-tourism-website/Data/data.json'; // 引入 JSON 數據
 import styles from './Crew.module.css';
-import imagePng from '../../assets/crew/image-douglas-hurley.png';
+import imagePng from '/Space-tourism-website/assets/crew/image-douglas-hurley.png';
 
 function Commander() {
   const member = data.crew[0]; // 獲取指揮官的數據
