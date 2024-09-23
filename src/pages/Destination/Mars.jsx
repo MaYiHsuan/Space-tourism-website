@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import data from '/Space-tourism-website/Data/data.json'; // 引入 JSON 數據
-import imagePng from '/Space-tourism-website/assets/destination/image-mars.png';
+import data from '../../Data/data.json'; // 引入 JSON 數據
+import imagePng from '../../destination/image-mars.png';
 import styles from './Destination.module.css';
 
 function Mars() {

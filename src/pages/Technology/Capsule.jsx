@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import data from '/Space-tourism-website/Data/data.json';
-import imagePng from '/Space-tourism-website/assets/technology/image-space-capsule-portrait.jpg';
-import imgSmall from '/Space-tourism-website/assets/technology/image-space-capsule-landscape.jpg';
+import data from '../../Data/data.json';
+import imagePng from '../../technology/image-space-capsule-portrait.jpg';
+import imgSmall from '../../technology/image-space-capsule-landscape.jpg';
 import styles from './Technology.module.css';
 
 function Capsule() {
