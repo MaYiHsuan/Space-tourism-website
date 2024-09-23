@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import data from '/Space-tourism-website/Data/data.json'; // 引入 JSON 數據
+import data from '../../Data/data.json'; // 引入 JSON 數據
 import styles from './Crew.module.css';
 import imagePng from '/Space-tourism-website/assets/crew/image-douglas-hurley.png';
 
