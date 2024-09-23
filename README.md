@@ -3,8 +3,8 @@
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
 <div align="center">
   <div style="display: flex; justify-content: center; align-items: flex-start;">
-    <img src="./tablet-design.jpg" alt="Photo 2" width="300">
-    <img src="./mobile-design.jpg" alt="Photo 3" width="300">
+    <img src="./tablet-design.jpg" alt="Photo 2" height="500">
+    <img src="./mobile-design.jpg" alt="Photo 3" height="500">
   </div>
 </div>
 
