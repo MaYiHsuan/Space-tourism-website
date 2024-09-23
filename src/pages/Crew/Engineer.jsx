@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import data from '../../Data/data.json';
-import imagePng from '../../crew/image-anousheh-ansari.png';
+import imagePng from '../../assets/crew/image-anousheh-ansari.png';
 import styles from './Crew.module.css';
 
 function Engineer() {

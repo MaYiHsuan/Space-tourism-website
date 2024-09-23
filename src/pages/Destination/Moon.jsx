@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import data from '../../Data/data.json'; // 引入 JSON 數據
-import imagePng from '../../destination/image-moon.png';
+import imagePng from '../../assets/destination/image-moon.png';
 import styles from './Destination.module.css';
 
 function Moon() {

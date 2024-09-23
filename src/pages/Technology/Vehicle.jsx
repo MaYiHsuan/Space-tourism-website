@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import data from '../../Data/data.json'; // 引入 JSON 數據
-import imagePng from '../../technology/image-launch-vehicle-portrait.jpg';
-import imgSmall from '../../technology/image-launch-vehicle-landscape.jpg';
+import imagePng from '../../assets/technology/image-launch-vehicle-portrait.jpg';
+import imgSmall from '../../assets/technology/image-launch-vehicle-landscape.jpg';
 import styles from './Technology.module.css';
 
 function Vehicle() {

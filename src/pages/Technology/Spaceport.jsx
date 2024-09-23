@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import data from '../../Data/data.json';
-import imagePng from '../../technology/image-spaceport-portrait.jpg';
-import imgSmall from '../../technology/image-spaceport-landscape.jpg';
+import imagePng from '../../assets/technology/image-spaceport-portrait.jpg';
+import imgSmall from '../../assets/technology/image-spaceport-landscape.jpg';
 import styles from './Technology.module.css';
 
 function Spaceport() {

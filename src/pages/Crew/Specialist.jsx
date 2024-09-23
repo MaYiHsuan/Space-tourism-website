@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import data from '../../Data/data.json';
-import imagePng from '../../crew/image-mark-shuttleworth.png';
+import imagePng from '../../assets/crew/image-mark-shuttleworth.png';
 import styles from './Crew.module.css';
 
 function Specialist() {
