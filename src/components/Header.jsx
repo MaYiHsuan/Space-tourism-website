@@ -2,13 +2,21 @@ import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/shared/logo.svg';
 import styles from './Header.module.css';
+import menu from '../assets/shared/icon-hamburger.svg';
+import closeIcon from '../assets/shared/icon-close.svg';
 
 function Header() {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
+    setIsMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle menu visibility
   };
 
   return (
@@ -17,10 +25,13 @@ function Header() {
         <Link to="/">
           <img src={logo} alt="logo" className={styles.logo} />
         </Link>
-        <div className={styles.line} />
+        <div className={styles.line}/>
+        <div>
+          <img src={menu} alt="menu" className={styles.menu} onClick={toggleMenu} />
+        </div>
       </div>
       
-      <ul className={`${styles.box} white`}>
+      <ul className={`${styles.box} ${isMenuOpen ? styles.menuOpen : ''} white`}>
         <li>
           <Link 
             to="/"  
@@ -58,6 +69,11 @@ function Header() {
           </Link>
         </li>
       </ul>
+      {isMenuOpen && (
+        <div className={styles.closeMenu} onClick={toggleMenu}>
+          <img src={closeIcon} alt="Close menu"/>
+        </div>
+      )}
     </div>
   );
 }

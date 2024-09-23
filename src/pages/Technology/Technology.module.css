@@ -62,3 +62,127 @@
     display: flex;
     align-items: center;
 }
+
+.imgSmall {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        background-image: url('../../assets/technology/background-technology-tablet.jpg');
+    }
+
+    .container {
+        margin: 40px;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .imgSmall {
+        display: block;
+        width: 768px;
+    }
+
+    .circle {
+        width: 56px;
+        height: 56px;
+        margin: 0px 8px;
+    }
+
+    .gridbox {
+        width: 688px;
+        height: 800px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-top: 88px;
+    }
+
+    .imgbox {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .box {
+        text-align: center;
+        margin-left: 88px;
+        margin-right: 88px;
+        margin-top: 40px;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .circleBox {
+        display: flex;
+        flex-direction: row;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+        background-image: url('../../assets/technology/background-technology-mobile.jpg');
+    }
+
+    .container {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .imgSmall {
+        display: block;
+        width: 375px;
+        height: 258px;
+        object-fit: cover;
+    }
+
+    .imgbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+        height: 258px;
+        overflow: hidden;
+    }
+    
+    .gridbox {
+        width: 327px;
+        height: 700px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-top: 88px;
+    }
+
+    .box {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        margin: 0px 8px;
+    }
+    
+    .textbox {
+        width: 327px;
+        height: 323px;
+        margin: 0px 24px;
+    }
+}

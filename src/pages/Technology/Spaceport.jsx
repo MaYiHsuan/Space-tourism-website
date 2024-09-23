@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import data from '../../Data/data.json';
 import imagePng from '../../assets/technology/image-spaceport-portrait.jpg';
+import imgSmall from '../../assets/technology/image-spaceport-landscape.jpg';
 import styles from './Technology.module.css';
 
 function Spaceport() {
@@ -24,7 +25,7 @@ function Spaceport() {
         <p className={`${styles.title} text-preset5 white`}><span className="number" style={{opacity: 0.25}}>03</span>&nbsp;Space launch 101</p>
         <div className={styles.gridbox}>
           <div className={styles.textbox}>
-            <div>
+            <div className={styles.circleBox}>
               <Link to="/Technology" onClick={() => handleLinkClick('/Technology')}>
                 <div
                   className={`${styles.circle} text-preset4`}
@@ -69,6 +70,7 @@ function Spaceport() {
           </div>
           <div className={styles.imgbox}>
             <img src={imagePng} alt={member.name} className={styles.img} />
+            <img src={imgSmall} alt={member.name} className={styles.imgSmall} />
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ function Commander() {
       <div className={styles.background} />
       <div className={styles.container}>
         <div className={styles.title}>
-          <p className={`${styles.title} text-preset5 white`}><span className="number" style={{opacity: 0.25}}>02</span>&nbsp;MEET YOUR CREW</p>
+          <p className="text-preset5 white"><span className="number" style={{opacity: 0.25}}>02</span>&nbsp;MEET YOUR CREW</p>
         </div>
         <div className={styles.gridbox}>
           <div className={styles.gridtext}>

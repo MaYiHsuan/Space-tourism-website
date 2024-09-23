@@ -26,7 +26,7 @@ a {
 .text-preset1 {
   font-family: 'Bellefair', sans-serif;
   font-size: 144px;
-  line-height:  171.9%;
+  line-height:  171%;
   letter-spacing: 0px;
   font-weight: 400;
 }
@@ -103,4 +103,43 @@ a {
 
 .number {
   font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .text-preset2 {
+    font-size: 80px;
+  }
+  .text-preset3 {
+    font-size: 40px;
+  }
+  .text-preset4 {
+    font-size: 24px;
+  }
+  .text-preset5 {
+    font-size: 20px;
+  }
+  .text-preset9 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .text-preset1 {
+    font-size: 80px;
+  }
+  .text-preset2 {
+    font-size: 56px;
+  }
+  .text-preset3 {
+    font-size: 24px;
+  }
+  .text-preset4 {
+    font-size: 18px;
+  }
+  .text-preset5 {
+    font-size: 16px;
+  }
+  .text-preset9 {
+    font-size: 15px;
+  }
 }

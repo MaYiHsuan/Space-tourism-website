@@ -4,7 +4,7 @@
     left: 0;
     width: 100%; /* 寬度 100% */
     height: 100%; /* 高度 100% */
-    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+    background-image: url("../../assets/destination/background-destination-desktop.jpg");
     background-size: cover; /* 使背景圖片覆蓋整個容器 */
     background-position: center; /* 背景圖片居中 */
     z-index: -1; /* 確保背景在其他內容之下 */
@@ -38,7 +38,7 @@
 }
 
 .img {
-    max-width: 480px;
+    width: 480px;
 }
 
 .textbox {
@@ -52,7 +52,7 @@
 }
 
 .line {
-    max-width: 445px;
+    width: 445px;
     margin: 40px 0px;
 }
 
@@ -101,3 +101,91 @@
     background-color: #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+    .background {
+        background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    }
+
+    .container {
+        margin: 40px;
+    }
+    .img {
+        width: 300px;
+    }
+    .imgbox {
+        padding: 42px 194px;
+    }
+    .gridbox {
+        width: 688px;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .textbox {
+        text-align: center;
+        padding: 11.5px 87px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .line {
+        width: 514px;
+        margin: 24px 0px;
+    }
+    .text {
+        display: grid;
+        grid-template-columns: 245px 245px;
+        gap: 24px;
+        height: 61px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+        background-image: url("../../assets/destination/background-destination-mobile.jpg");
+    }
+
+    .container {
+        margin: 24px;
+    }
+    .title {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img {
+        width: 150px;
+    }
+
+    .imgbox {
+        padding: 26px 88.5px;
+    }
+
+    .gridbox {
+        width: 327px;
+        height: 710px;
+        display: grid;
+        grid-template-columns: 327px;
+        grid-template-rows: 202px 467px;
+    }
+
+    .textbox {
+        text-align: center;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .text {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .line {
+        width: 327px;
+    }
+}

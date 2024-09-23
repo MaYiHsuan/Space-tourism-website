@@ -39,3 +39,48 @@
     transition: box-shadow 0.3s ease;
     color: rgba(11, 13, 23, 0.5);
 }
+
+@media screen and (max-width: 768px) {
+    .background {
+        background-image: url("/src/assets/home/background-home-tablet.jpg");
+    }
+    .box {
+        margin: 128px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container {
+        padding-top: 0px;
+    }
+    .textBox {
+        text-align: center;
+        width: 512px;
+        height: 334px;
+     }
+     .text4 {
+        margin-top: 150px;
+     }
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+        background-image: url("/src/assets/home/background-home-mobile.jpg");
+    }
+    .box {
+        margin: 24px;
+    }
+    .textBox {
+        width: 327px;
+        height: 294px;
+     }
+    .text4 {
+        width: 144px;
+        height: 144px;
+        margin-top: 119px;
+        box-shadow: 0 0 0 75px rgba(255, 255, 255, 0);
+     }
+    .text4:hover {
+        box-shadow: 0 0 0 75px rgba(255, 255, 255, 0.1);
+    }
+}

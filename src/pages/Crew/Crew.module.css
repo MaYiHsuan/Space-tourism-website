@@ -19,7 +19,7 @@
 }
 
 .title {
-    height: 34px;
+    height: 100%;
     margin-bottom: 24px;
     display: flex;
     align-items: center;
@@ -78,7 +78,7 @@
 }
 
 .img {
-    max-width: 539px;
+    width: 539px;
     margin: 29px 0px 29px 48px;
 }
 
@@ -94,4 +94,100 @@
       rgba(13, 15, 28, 1) 100%
     );
     pointer-events: none; /* 確保遮罩不會影響下方元素的交互 */
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    }
+
+    .container {
+        margin: 40px;
+    }
+    .img {
+        width: 410px;
+        margin: 0px;
+    }
+    .imageContainer {
+        display: flex;
+        justify-content: center; /* 垂直居中 */
+        align-items: flex-start;
+        height: 100%;
+        overflow: visible;
+        padding-top: 0px;
+    }
+    .gradientOverlay {
+        display: none;
+    }
+    .gridbox {
+        width: 688px;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 305px 463px;
+        
+        padding: 40px 88px 0px 88px;
+    }
+    .gridtext {
+        display: grid;
+        grid-template-rows: 1fr;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text {
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .circle {
+        width: 10px;
+        height: 10px;
+        margin-right: 16px;
+    }
+    .title {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+    }
+
+    .container {
+        margin: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img {
+        width: 270px;
+        margin: 28px;
+    }
+
+    .gradientOverlay {
+        display: block;
+        height: 40%;
+    }
+
+    .gridbox {
+        width: 327px;
+        height: 701px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0px;
+    }
+    .gridtext {
+        margin-top: 40px;
+    }
+    
+    .title {
+        height: 100%;
+        margin-bottom: 24px;
+        justify-content: center;
+        text-align: center;
+    }
 }
