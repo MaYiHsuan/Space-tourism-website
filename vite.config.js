@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()], // 使用 react 插件來處理 JSX 和 React 的功能
-  base: '../../', // 用於 GitHub Pages 部署的 base 路徑
+  base: '/Space-tourism-website/', // 用於 GitHub Pages 部署的 base 路徑
   resolve: {
     alias: {
       react: resolve(__dirname, 'node_modules/react'),
