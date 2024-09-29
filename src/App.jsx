@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
@@ -43,4 +43,10 @@ function App() {
   );
 }
 
-export default App;
+export default function Root() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}

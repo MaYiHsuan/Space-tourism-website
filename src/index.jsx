@@ -7,8 +7,6 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter basename="/Space-tourism-website">
-      <App />
-    </HashRouter>
+    <App />
   </React.StrictMode>
 );

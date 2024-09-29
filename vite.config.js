@@ -12,4 +12,4 @@ export default defineConfig({
       'react-router-dom': resolve(__dirname, 'node_modules/react-router-dom'),
     },
   },
-});
+})
